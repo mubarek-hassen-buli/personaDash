@@ -7,7 +7,7 @@ import { useUser } from "@/lib/useUser";
 import ClockCard from "@/components/Clock";
 import WeatherCard from "@/components/Weather";
 import TasksCard from "@/components/todoList";
-import { SpotifyWidget } from "@/components/Spotify";
+import SpotifyWidget from "@/components/Spotify";
 export default function DashboardPage() {
   const user = useUser();
   const router = useRouter();
