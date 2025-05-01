@@ -64,7 +64,7 @@ export default function SignupFace() {
         <Button
           variant="secondary"
           className="w-full"
-          onClick={() => router.push("/auth/login")}
+          onClick={() => router.push("/dashboard")}
         >
           Skip for now
         </Button>

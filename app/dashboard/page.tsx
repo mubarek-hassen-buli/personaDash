@@ -8,6 +8,8 @@ import ClockCard from "@/components/Clock";
 import WeatherCard from "@/components/Weather";
 import TasksCard from "@/components/todoList";
 import SpotifyWidget from "@/components/Spotify";
+import UserProfile from "@/components/UserProfile";
+
 export default function DashboardPage() {
   const user = useUser();
   const router = useRouter();
@@ -22,17 +24,7 @@ export default function DashboardPage() {
       <header className="flex items-center justify-between mb-6">
         <div className="text-2xl font-bold">Dashboard</div>
         <div className="flex items-center gap-2">
-          <span className="text-sm px-2 py-1 rounded-full bg-green-600">
-            Online
-          </span>
-          <div className="flex items-center gap-2">
-            <img
-              src="/avatar.jpg" // replace this with user's profile pic if available
-              alt="User Avatar"
-              className="w-10 h-10 rounded-full"
-            />
-            <span className="font-medium">John Doe</span>
-          </div>
+          <UserProfile />
         </div>
       </header>
 
